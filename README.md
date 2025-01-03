@@ -16,17 +16,16 @@
 
 ##Technologies Used
 
-1.Frontend:
+1. Frontend:
 
-  HTML
+    HTML
   
-  CSS
+    CSS
   
-  JavaScript
+    JavaScript
   
-2.Backend/Database:
-
-  Firebase (used as real time database for storing user data,sport events,and messages)
+ 2 .Backend/Database:
+    Firebase (used as real time database for storing user data,sport events,and messages)
 
 ##Folder distribution
 
