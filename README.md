@@ -32,27 +32,21 @@
 
 --Admin Panel
    City
-   
-     city.html
+    city.html
      
    Area
-   
      area.html
      
    Category
-   
      category.html
      
 --Home
-
      home.html(This file is the mail file)
      
 --Login
-
      login.html
      
 --UserPanel 
-
     user.html
    
 --firebase-config.js
