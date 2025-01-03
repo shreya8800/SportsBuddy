@@ -1,0 +1,239 @@
+body{
+
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+
+
+}
+nav { 
+    width: 82%;
+    margin-left:0%;
+    background-color: #555d65;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out the content (left and right) */
+}
+
+nav a img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: 1.2rem;
+}
+
+#dashboardName {
+    text-align: center;
+    margin-right: 50px;
+    flex-grow: 1; /* Allows the h1 to grow and center itself */
+    font-size: 2rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.container {
+    flex-grow: 1;
+    width: 70%;
+    margin-left:8%;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+table{
+    width: 80%;
+    border-collapse: collapse;
+    margin-top:2rem;
+    margin-left:10%;
+}
+th,td{
+    border:1px solid #ddd;
+    padding: 1rem;
+    text-align: left; 
+}
+th{
+    background-color: #2c3e50;
+
+    color: #ffffff;
+}
+
+
+.addBtn{
+    background-color: rgb(167, 111, 74);
+    color: whitesmoke;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.addBtn:hover{
+    background-color: #935f3c;
+}
+
+#addSportForm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: none;
+    width: 300px;
+    max-width: 100%;
+}
+
+#addSportForm select,
+#addSportForm input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.btn{
+    background-color: #a76f4a;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    margin: 1rem;
+    cursor: pointer;
+    
+  }
+
+.btn:hover{
+    background-color: #935f3c;
+}
+#addSportForm button:hover {
+    background-color: #935f3c;
+  }
+
+
+#messageForm {
+    margin-bottom: 20px;
+}
+
+#messageForm input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#messageForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(167, 111, 74);
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+#messageList h3 {
+    color: #ecf0f1;
+}
+
+#messages {
+    list-style: none;
+    padding: 0;
+}
+
+.message {
+    background-color: #34495e;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #ecf0f1;
+}
+
+.sent {
+    background-color: #328e7c;
+}
+
+.received {
+    background-color: #356a8e;
+}
+@media (max-width: 992px) {
+    .container {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .sidebar {
+        width: 100%; /* Sidebar takes full width */
+        position: relative;
+        margin-top: 3rem;
+        align-items: center;
+        right: 0;
+        height: auto; /* Allow the sidebar to grow vertically with content */
+    }
+
+    nav {
+        width: 100%;
+    }
+}
+
+@media (max-width:786px){
+    .container{
+        width:100%;
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav a img {
+        width: 80px; 
+        height: 80px;
+    }
+    #dashboardName {
+        font-size: 1.5rem;
+        margin-right: 0;
+    }
+}
+@media (max-width: 576px) {
+
+    .addBtn {
+        width: 100%; 
+    }
+
+    #addSportForm {
+        width: 80%; 
+    }
+    .container{
+        width:100%;
+        margin-left: 0;
+        padding: 1rem;
+    }
+}

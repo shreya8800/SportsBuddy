@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SportsBuddy</title>
+    
+        <!-- Font Awesome CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="home.css">
+    </head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark " >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../media/SportsBuddy (2).png" alt="SportsBuddy" style="height: 40px;">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../UserPanel/user.html" id="userDashboard" style="display: none;">User DashBoard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../AdminPanel/admin.html" id="adminDashboard" style="display: none;">Admin DashBoard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Login/login.html" id="loginLink">Login/SignUp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="logout()" id="logoutLink" style="display: none;">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        
+        <div class="secondPart d-flex justify-content-between mb-5">
+             <!-- <div class="about flex-fill p-3">
+                <h2>LOCATE SPORTS VENUES AND CONNECT 
+                    <br> WITH 
+                    FELLOW PLAYERS NEARBY</h2>
+                <h3>Unleash your passion at sports venues with enthusiasts.</h3>
+            </div> -->
+            
+        </div>
+        <div class="discoverGames text-center mb-4">
+            <h2>DISCOVER GAMES</h2>
+            <div id="discoverdiv">
+
+            </div>
+        </div>
+
+        <div id="sportsCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../media/sport1.jpg" class="d-block w-100" alt="Sports Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../media/sport4.jpg" class="d-block w-100" alt="Sports Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../media/i want images of playing sports.jpg" class="d-block w-100" alt="Sports Image 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#sportsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#sportsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+
+
+        <div class="popularSports text-center">
+            <h2>POPULAR SPORTS</h2>
+            <div id="populardiv" style="display: flex; gap: 20px; flex-wrap: wrap;">
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <p class="text-center mb-0">© 2024 SportsBuddy.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../firebase-config.js"></script>
+    <script type="module" src="./home.js"></script>
+
+    </body>
+</html>

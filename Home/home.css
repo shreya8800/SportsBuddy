@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #555d65;
+    padding: 10px 20px !important;
+    color: whitesmoke;
+}
+
+nav img {
+    width: 110px;
+    height: 90px !important;
+    border-radius: 50%;
+    font-size: 40px;
+}
+
+nav .dashboard a, nav .login a, nav .logout a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 3rem !important;
+}
+
+nav .dashboard a:hover, nav .login a:hover, nav .logout a:hover {
+    color: #d3fff6;
+}
+
+nav .dashboard {
+    display: flex;
+}
+
+#logoutLink {
+    display: none;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* About & Image */
+.secondPart {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    background-image: url("../media/LOCATE SPORTS VENUES AND CONNECT (1).png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    width: 100vw;
+    height: 500px;
+}
+
+#sportsCarousel {
+    width: 100vw; 
+    margin: 0 auto;
+    padding: 0; 
+    box-sizing: border-box;
+    position: relative;
+}
+
+#sportsCarousel .carousel-inner {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#sportsCarousel .carousel-item {
+    width: 100%; 
+}
+
+#sportsCarousel .carousel-inner img {
+    width: 100%; 
+    height: 600px;
+    object-fit: cover; 
+}
+
+#sportsCarousel .carousel-control-prev-icon,
+#sportsCarousel .carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+#sportsCarousel .carousel-control-prev,
+#sportsCarousel .carousel-control-next {
+    width: 5%; 
+}
+
+#sportsCarousel .carousel-indicators [data-bs-target] {
+    background-color: #000;
+    border: none;
+}
+
+
+
+
+.discoverGames, .popularSports {
+    text-align: center;
+    margin-top: 5rem;
+    margin-left:15%
+}
+
+.discoverGames h2, .popularSports h2 {
+    font-size: 2rem;
+    color: #34495e;
+   
+}
+
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+#discoverdiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    justify-content: space-evenly;
+    
+  }
+  
+  .discoverNewDiv {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin: 10px; 
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    flex-basis: calc(25% - 30px); 
+    min-width: 250px; 
+    max-width: calc(25% - 30px); 
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    
+  }
+  .discoverNewDiv:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.discoverNewDiv p.sportName {
+    background-color: #e0e0e0;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.discoverNewDiv p.city{
+    margin-top: 2rem;
+    margin-top: 2rem;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+
+
+.discoverNewDiv p.location {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+    font-style: italic;
+    background-color: #f9f9f9;
+}
+
+
+.discoverNewDiv .date-time {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap:5px;
+}
+
+.discoverNewDiv .date-time p {
+    width: 48%;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Username */
+.discoverNewDiv p.addedBy {
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+    text-align: right;
+    margin-top: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px;
+    background-color: #fafafa;
+}
+
+/* Popular Sports */
+.newDiv {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 20%; 
+    height: 300px; 
+    transition: transform 0.3s ease-in-out;
+    margin-right: 2rem; /* Add margin to the right of each div */
+  }
+
+.newDiv:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.newDiv img {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    width:200px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.newDiv p {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px; 
+  }
+
+
+@media (max-width: 768px) {
+    .secondPart {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondPart .about, .secondPart .image {
+        margin-bottom: 20px;
+    }
+
+    #locationInput {
+        width: 90%;
+    }
+    .newDiv{
+        width: 100%;
+    }
+    .newDiv img{
+        width:100%
+    }
+    .discoverNewDiv {
+        width: 100%;
+        max-width: 200px;
+    }
+}
